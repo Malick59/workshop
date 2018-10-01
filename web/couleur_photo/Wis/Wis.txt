@@ -1,0 +1,3 @@
+#FDEA18 -> Jaune
+#E7218A -> Rose
+#00A7E3 -> bleu clair
