@@ -1,0 +1,3 @@
+#D50100 -> rouge
+#C01716 -> rouge foncé
+#F55043 -> corail
