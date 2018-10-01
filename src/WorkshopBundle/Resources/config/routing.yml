@@ -1,0 +1,15 @@
+workshop_epsi:
+    path:     /epsi
+    defaults: { _controller: WorkshopBundle:Epsi:home }
+
+workshop_wis:
+    path:     /wis
+    defaults: { _controller: WorkshopBundle:Wis:home }
+
+workshop_ifag:
+    path:     /ifag
+    defaults: { _controller: WorkshopBundle:Ifag:home }
+
+workshop_dafault:
+    path:     /
+    defaults: { _controller: WorkshopBundle:Default:home }
