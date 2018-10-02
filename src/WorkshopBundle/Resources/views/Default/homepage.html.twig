@@ -1,7 +1,20 @@
 {% extends '::base.html.twig' %}
 
 {% block body %}
-<a href="{{ path('workshop_epsi') }}" id="epsi">epsi</a>
-<a href="{{ path('workshop_wis') }}">wis</a>
-<a href="{{ path('workshop_ifag') }}">ifag</a>
+    <div class="zoom">
+        <a href="{{ path('workshop_epsi') }}">
+            <img src="{{ asset('couleur_photo/EPSI/apple-touch-icon.png') }}" alt="logoEpsi"/>
+        </a>
+    </div>
+    <div class="zoom">
+        <a href="{{ path('workshop_wis') }}">
+            <img src="{{ asset('couleur_photo/Wis/Logo/apple-touch-icon.png') }}" alt="logoWiz"/>
+        </a>
+    </div>
+    <div class="zoom">
+        <a href="{{ path('workshop_ifag') }}">
+            <img src="{{ asset('couleur_photo/Ifag/logo.png') }}" alt="logoIfag"/>
+        </a>
+    </div>
+
 {% endblock %}
