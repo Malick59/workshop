@@ -13,16 +13,18 @@ body{
 /* Zoom logo portail */
 
 .zoom {
-    transition: transform .2s;
+    transition: transform .5s;
     width: 70px;
     height: 70px;
-
+	opacity: 0.8;
+	transition: 0.5s;
 }
 
 .zoom:hover {
     -ms-transform: scale(1.5); /* IE 9 */
     -webkit-transform: scale(1.5); /* Safari 3-8 */
     transform: scale(1.5); 
+	opacity: 1;
 }
 
 /* lien */
