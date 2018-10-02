@@ -1,5 +1,7 @@
-coucou !
+{% extends '::base.html.twig' %}
 
+{% block body %}
 <a href="{{ path('workshop_epsi') }}">epsi</a>
 <a href="{{ path('workshop_wis') }}">wis</a>
 <a href="{{ path('workshop_ifag') }}">ifag</a>
+{% endblock %}
