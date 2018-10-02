@@ -80,3 +80,7 @@ html {
 a:link,a:hover,a{
 	text-decoration:none; 
 }
+a:focus
+{
+outline:0;
+} 
