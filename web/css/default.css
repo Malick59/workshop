@@ -1,21 +1,70 @@
 /* General */
+body {
+    background: url("../couleur_photo/Default/background-image.png") no-repeat;
+    height: 100% !important;
+	display: block;
+	width: 100% !important;
+	position : static;
+	margin :0;
+    background-size: cover;
+    font-family: 'Montserrat',sans-serif;
 
-html,body{
-	margin: 0;
-	padding: 0;
+}
+div.logo {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	top: 0;
+	width: 100%;
+
+}
+p {
+	text-align: center;
 }
 
-body{
-	background-color:white;
-	font-family: 'Montserrat', sans-serif;
+div.header {
+	top: 0;
+	left : 0;
+}
+
+div.footer {
+	display: block;
+	position: relative;
+}
+
+.baseline {
+    margin-top: -100px;
+    margin-bottom: 50px;
+    height: 100%;
+    font-size: 40px;
+    color: white;
+}
+
+.footer p {
+	max-width: 250px;
+	position: absolute;
+	bottom: -300px;
+	right: 250px;
+	z-index: 10;
+}
+
+img.wave-img {
+	transform: rotate(180deg);
+	position: absolute;
+	right: -70px;
+	top: 100px;
+}
+
+html {
+	overflow-y: hidden;
+	overflow-x: hidden;
 }
 
 /* Zoom logo portail */
 
 .zoom {
-    transition: transform .5s;
-    width: 70px;
-    height: 70px;
+    width: auto;
+    height: auto;
 	opacity: 0.8;
 	transition: 0.5s;
 }
