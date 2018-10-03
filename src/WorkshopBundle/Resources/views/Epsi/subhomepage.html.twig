@@ -1,1 +1,293 @@
-test epsi
+{% extends '::base.html.twig' %}
+
+{% block stylesheets %}
+    <!-- we use cdn but you can also include local files located in css directory-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ asset('css/font-awesome-animation.min.css') }}">
+    <!-- onepage scroll stylesheet-->
+    <link rel="stylesheet" href="{{ asset('css/onepage-scroll.css') }}">
+    <!-- theme stylesheet-->
+    <link href="{{asset('css/epsi.css')}}" rel="stylesheet" type="text/css" />
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
+{% endblock %}
+{% block body %}
+    <div class="wrapper">
+        <div class="main"> 
+            <!-- page 1-->
+            <section id="page1">
+
+                <div class="content">
+                    <div id="carousel" class="carousel slide" data-ride="carousel">
+                        <!-- Items -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="{{ asset('couleur_photo/EPSI/epsi_slider_1.jpg') }}" alt="Slide 1" />
+                                <div class="affichageContenu">
+                                    <div class="title">TITRE</div>
+                                    <div class="text">
+                                        AFFICHAGE
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="{{ asset('couleur_photo/EPSI/epsi_slider_2.jpg') }}" alt="Slide 2"/>
+                                <div class="affichageContenu">
+                                    <div class="title" id="affichageTitleSlide2">TITRE</div>
+                                    <div class="text" id="affichageTextSlide2">
+                                        AFFICHAGE
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="{{ asset('couleur_photo/EPSI/galerie-2-1.jpg') }}" style="width: 1076px"/>
+                                <div class="affichageContenu">
+                                    <div class="title" id="affichageTitleSlide2">TITRE</div>
+                                    <div class="text" id="affichageTextSlide2">
+                                        AFFICHAGE
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <a href="#carousel" class="left carousel-control" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a href="#carousel" class="right carousel-control" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>             
+                </div>
+                <div class="icon faa-float animated"><i class="fa fa-angle-double-down"></i></div>
+            </section>
+            <!-- page 2-->
+            <section id="page2">
+                <div class="content">
+                    <div class="container clearfix">
+                        <div class="row">
+                            <div class="col-md-6"> 
+                                <h2 class="heading">Panorama des études</h2>
+                                <p class="lead">
+                                <p>L’EPSI est une école d’informatique qui propose des programmes de Bac à Bac+5 et de la formation continue.
+
+                                    Quel que soit votre profil ou votre situation, vous pouvez accéder à la formation informatique et à un des programmes EPSI en admission directe ou en admission parallèle.<br><br>
+
+                                    La formation informatique de l’EPSI se compose de deux cycles :<br><br>
+
+                                    1er  CYCLE : Le  programme Bachelor informatique, prépare les apprenants à un titre de niveau II (Bac +3/4) certifié par le RNCP . 
+                                    Les élèves peuvent également présenter le BTS SIO (Services Informatiques aux Organisations) afin de sécuriser leur parcours.<br><br>
+
+                                    2nd CYCLE : Le programme Ingénierie  informatique  prépare les apprenants à un titre de niveau I (Bac+5) « Expert en informatique et système d’information » certifié par le RNCP.<br><br>
+
+                                    À partir de la 3ème année, les apprenants peuvent suivre leur formation informatique en initial ou par alternance.</p>
+
+                            </div>
+                            <div class="col-md-5 col-md-offset-1"><br>
+                                <p><img src="{{ asset('couleur_photo/EPSI/Panorama-MECP.png') }}" style="width: 500px"alt=""</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- page 3 - class section-gray adds gray background-->
+            <section id="page3">
+                <div class="content">
+                    <div class="container clearfix">
+                        <div class="row">                
+                            <h2 class="heading">Integrez l'EPSI</h2>
+                            <p class="lead">
+                            <p>Le programme modulaire, basé sur l’acquisition des compétences du parcours Ingénierie Informatique, permet toutes les admissions post-Bac, Bac+2, Bac+3 et sous conditions, les admissions parallèles.<br><br>
+
+                                Notre outil d’évaluation des compétences vous permet d’intégrer l’EPSI tout au long de l’année.<br><br>
+
+                                Salariés, demandeurs d’emplois, vous pouvez également intégrer l’EPSI et bénéficier de la VAE (Validation des Acquis et de l’Expérience).<br><br>
+
+                                Les formations de l’EPSI sont éligibles au CPF (Compte Personnel de Formation).</p>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="page5">
+                <div class="content">
+                    <div class="container clearfix">
+                        <div class="row">
+                            <div class="col-md-6"> 
+                                <h2 class="heading">Espace Entreprise</h2>
+                                <p class="lead">
+                                <p>Les besoins en formation sont aujourd’hui multiples pour répondre au marché de l’emploi dans le numérique ou de l’informatique. L’accent doit être mis sur tous les publics !
+
+                                    Alors comment faire pour satisfaire ce besoin massif de formation ?
+
+                                    Comment bien former dans un contexte où les besoins exponentiels en volume se doublent d’une difficulté subsidiaire : son individualisation croissante ?
+
+                                    Force est de constater que l’approche « métier » s’est affinée et que l’approche « compétences » est désormais plus en adéquation avec le marché du travail et les critères de recrutement.
+
+                                    Le « multi-format » n’est cependant pas l’unique solution à la montée en compétences et au développement de l’employabilité.
+
+                                    Le « multi-financements » en est un autre.
+
+                                    La formation est un investissement ; elle implique une motivation importante, durable et constante. Elle est un effort.
+
+                                    Pour être productive, elle doit être partagée entre les divers acteurs – apprenants, entreprises- et les divers dispositifs – Alternance, CPF, plan de formation, VAE, …
+
+                                    Ce partage est la clé de la responsabilisation de chaque individu et donc un vecteur de succès dans l’emploi !</p>
+
+                            </div>
+                            <div class="col-md-5 col-md-offset-1"><br>
+                                <p>Notre proximité avec les entreprises induit une connaissance des besoins en recrutement dans les métiers du digital et de l’informatique.
+
+                                    Nous planifions sur l’année les modules de formation continue de manière optimisée suivant les contraintes des entreprises.
+
+                                    Les ingénieurs EPSI sont plébiscités pour leurs compétences techniques, leur capacité d’auto-apprentissage et leur culture d’entreprise acquises en contrat d’alternance.
+
+                                    L’entreprise doit anticiper la montée en compétences de ces profils pour assurer leur opérationnalité dans le temps.
+
+                                    L’adaptabilité de notre offre de formation est essentielle pour répondre aux enjeux du recrutement dans les métiers du numérique.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- page 5-->
+            <section id="page5" class="section-gray">
+                <div class="content">
+                    <div class="container clearfix">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2 class="heading">Campus & vie etudiante</h2>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <p>Lille est la capitale des Hauts De France. Ville étudiante et dynamique, Lille compte plus de 115 000 étudiants sur à peu près 1 million d’habitants. Petite ville qui regroupe toutes les caractéristiques d’une grande ville, elle est très bien reliée et se situe à proximité de certaines capitales Européennes. Son réseau de transport est très efficace, il compte 2 lignes et 60 stations de métro ainsi que de nombreuse lignes de bus et de tramway. Notre campus est idéalement situé en plein centre-ville (à deux pas de la Grand Place) et à 10 minutes à pied de la gare Lille Flandres.
+                                        <p><strong>Le Bureau Des Etudiants</strong><br>
+
+                                            C’est une équipe dynamique et animée par la volonté d’organiser des manifestations de tous types pour les epsiens. Ils participent activement à la vie de l’école et contribuent pleinement à la bonne ambiance qu’il règne à l’EPSI Lille:<br>
+                                            <br>
+                                            Journée d’intégration<br>
+                                            Semaine au ski<br>
+                                            Soirées, évènements sportifs…<br>
+                                            L’EPSI c’est une vie associative étudiante active au sein du campus de Lille mais également en échange constant avec les autres campus EPSI de France.<br>                    </div>
+
+                                    <div class="col-sm-6">
+                                        <p><strong>Le Campus</strong><br>
+
+                                            <br>Campus récent
+                                            <br>Salles tout occupées
+                                            <br>Accès à un incubateur d’entreprises
+                                            <br>Situation géographique adéquate
+                                            <br>Des espaces de co working
+                                            <br>Wifi et fibre optique
+                                            <br>Laboratoire MyDil<br>
+                                            <br>
+                                            <img src="{{ asset('couleur_photo/EPSI/Le-BDE-de-l-EPSI-Lille-150x150.png') }}">
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="page2">
+                <div class="content">
+                    <div class="container clearfix">
+                        <div class="row">
+                            <div class="col-md-6"> 
+                                <h2 class="heading">My DIL</h2>
+                                <p class="lead">
+                                <p>Un lieu où le savoir à la demande est à la portée de tous nos élèves et où le matériel modulable et high-tech est mis au service de l’expérimentation pédagogique.
+
+                                    Échanger, développer, accélérer, co-construire, favoriser l’émergence de projets innovants par un lieu de collaboration et de confrontation unique entre étudiants :<br><br>
+
+                                    Espace, laboratoire dédié au codage, à l’innovation technologique.<br>
+
+                                    Dans MyDIL, vous avez un accès illimité aux dernière technologies : <br><br>
+                                <ul>NAO, le robot humanoïde sur lequel vous inventez le compagnon de demain.<br>
+                                    L’oculus rift et sa nouvelle forme d’immersion en 3D.<br>
+                                    Les nouvelles technologies de réalité augmentée (hololens…).<br>
+                                    L’impression 3D pour le prototypage.<br>
+                                    Les objets connectés d’aujourd’hui, et surtout ceux de demain, bracelets, montres, balance tissu…<br>
+                                    Les nouvelles interfaces homme/machine, comme le leap motion.<br>
+                                    Les différentes formes de tablettes et Smartphones nécessaires au développement des applications du futur.<br>
+                                    Les technologies de système embarqué (raspberry py, arduino…).<br>
+                                    Les drônes et leurs nouvelles applications.<br>
+                                    Des outils collaboratifs innovants comme la surface hub.<br> 
+                                    Et bien d’autres<br>
+
+                                    </p>
+
+                                    </div>
+                                    <div class="col-md-5 col-md-offset-1"><br>
+                                        <p><img src="{{ asset('couleur_photo/EPSI/mydil-e1490867265411-293x300.png') }}" style="width: 500px"alt=""</p>
+
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <!-- page 6-->
+            <section id="page6">
+                <div class="content">
+                    <div class="container clearfix">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2 class="heading">Equipe pédagogique & Contact</h2>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <form id="contact-form" method="post" action="contact.php" class="contact-form">
+                                            <div class="controls">
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <label for="name">Prénom *</label>
+                                                            <input type="text" name="name" placeholder="Entrez votre prénom" required="required" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <label for="surname">Nom *</label>
+                                                            <input type="text" name="surname" placeholder="Entrez votre nom" required="required" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="surname">Email *</label>
+                                                    <input type="email" name="email" placeholder="Entrez votre email" required="required" class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="surname">Message *</label>
+                                                    <textarea rows="4" name="message" placeholder="Entrez votre message" required="required" class="form-control"></textarea>
+                                                </div>
+                                                <div class="text-center">
+                                                    <input type="submit" name="name" value="Envoyez le message" class="btn btn-primary btn-block">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>Frédéric DAUMONT : Directeur de campus</p>
+                                        <p>Céline FASQUELLE : Chargée de développement - Services des admissions<br></p>
+                                        <p>Karima ELASRY : Chargée de développement - Services des admissions<br></p>
+                                        <p>Mélissa FERDOUZ : Chargée des relations entreprises<br></p>
+                                        <p>Eddie ALAMASSET : Résponsable pédagogique<br></p>
+                                    </div>
+                                </div>
+                                <div class="row copyright">
+                                    <div class="col-md-6">
+
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="credit">Template by <a href="https://bootstraptemple.com">Bootstrap Temple</a></p>
+                                        <!-- Please do not remove the backlink to us unless you have purchased the attribution-free license at https://bootstraptemple.com. It is part of the license conditions. Thanks for understanding :) -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script type="text/javascript" src="{{asset('js/epsi.js')}}"/></script>
+{% endblock %}
