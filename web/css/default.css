@@ -38,6 +38,7 @@ div.footer {
     height: 100%;
     font-size: 40px;
     color: white;
+	transition: 0.8s;
 }
 
 .footer p {
