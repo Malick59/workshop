@@ -38,6 +38,7 @@ div.footer {
     height: 100%;
     font-size: 40px;
     color: white;
+	transition: 0.8s;
 }
 
 .footer p {
@@ -83,4 +84,8 @@ a:link,a:hover,a{
 a:focus
 {
 outline:0;
-} 
+}
+
+.textFooter{
+	font-size:25px;
+}
