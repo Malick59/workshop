@@ -84,4 +84,8 @@ a:link,a:hover,a{
 a:focus
 {
 outline:0;
-} 
+}
+
+.textFooter{
+	font-size:25px;
+}
