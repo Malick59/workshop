@@ -311,5 +311,6 @@
             <img class="logowis" src="{{ asset('couleur_photo/Wis/Logo/apple-touch-icon.png') }}" alt="logoWiz">
         </a>    
     </div>   -->
-    <script type="text/javascript" src="{{asset('js/wiz.js')}}"/></script>
+{% block javascripts %}<script type="text/javascript" src="{{asset('js/wiz.js')}}"></script>
+{% endblock %}
 {% endblock %}
