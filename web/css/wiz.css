@@ -1086,4 +1086,54 @@ CAR0USEL
 	.text{
 		font-size: 0.8em;
 	}
+.Menu_bar_right{
+	position:fixed; 
+	width: 100%;
+	display: flex;
+	flex-flow:column;
+	align-items:flex-end;
+	top: 15%;
+	background: transparent;
+	overflow-x: hidden;
+	padding: 8px 0;
+	opacity: 1;
+}
+
+.Menu_bar_right a{
+	z-index: 1;
+	height: 56px;
+	width: 75px;
+	padding: 6px;
+	text-decoration: none;
+	font-size: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+	background-color:#fdce37;
+	border:1px;
+	border-top-left-radius: 10px 10px;
+	border-bottom-left-radius: 10px 10px;
+	transition:0.3s;
+}
+
+.Menu_bar_right a:hover{
+	transition:0.3s;
+	width: 95px;
+	height: 71px;
+}
+.Menu_bar_right a:hover img{
+	transition:0.3s;
+}
+
+.logoepsi {
+	width: 65%;
+}
+
+.logoifag {
+	width: 100%;
+}
+
+.logowis {
+	width: 80%;
 }
