@@ -16,7 +16,7 @@ div.logo {
 	align-items: center;
 	top: 0;
 	width: 100%;
-
+	transition: 0.8s;
 }
 p {
 	text-align: center;
@@ -68,7 +68,7 @@ html {
 
 /* Zoom logo portail */
 
-xzoom {
+.zoom {
     width: auto;
     height: auto;
 	opacity: 0.8;
