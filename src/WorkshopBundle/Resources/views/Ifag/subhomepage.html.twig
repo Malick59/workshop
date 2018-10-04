@@ -1,4 +1,5 @@
 {% extends '::base.html.twig' %}
+
 {% block stylesheets %}
     <!-- we use cdn but you can also include local files located in css directory-->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -11,315 +12,304 @@
     <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
 {% endblock %}
 {% block body %}
-    <div class="wrapper">
-        <div class="main">
-            <!-- page 1-->
-            <section id="page1">
-                <div class="overlay">
-                </div>
-                <div class="content car">
-                    <div id="carousel" class="carousel slide" data-ride="carousel">
-                        <!-- Items -->
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <img src="{{ asset('couleur_photo/Ifag/Font/fond-footer.jpg') }}" alt="Slide 1" />
-                                <div class="affichageContenu">
-                                    <div class="title">Bienvenue sur le site de l'IFAG</div>
-                                    <div class="text italic">
-                                        L'école de management pour <strong>entreprendre</strong> et <strong>innover</strong><br>
-                                        Naviguez et découvrez pourquoi cette école <strong>est faîte pour vous !</strong>
-                                    </div>
+<div class="wrapper">
+    <div class="main">
+        <!-- page 1-->
+        <section id="page1">
+            <div class="overlay">
+            </div>
+            <div class="content car">
+                <div id="carousel" class="carousel slide" data-ride="carousel">
+                    <!-- Items -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="{{ asset('couleur_photo/Ifag/Font/fond-footer.jpg') }}" alt="Slide 1" />
+                            <div class="affichageContenu">
+                                <div class="title">Bienvenue sur le site de l'IFAG</div>
+                                <div class="text italic">
+                                    L'école de management pour <strong>entreprendre</strong> et <strong>innover</strong><br>
+                                    Naviguez et découvrez pourquoi cette école <strong>est faîte pour vous !</strong>
                                 </div>
-                            </div>
-                            <div class="item">
-                                <img src="{{ asset('couleur_photo/Ifag/Font/fond-rouge.jpg') }}" alt="Slide 2"/>
-                                <div class="affichageContenu">
-                                    <div class="title" id="affichageTitleSlide2">TITRE</div>
-                                    <div class="text italic" id="affichageTextSlide2">
-                                        AFFICHAGE
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <img src="{{ asset('couleur_photo/Ifag/Font/fond-vert.jpg') }}" style="width: 1076px"/>
-                                <div class="affichageContenu">
-                                    <div class="title" id="affichageTitleSlide2">TITRE</div>
-                                    <div class="text italic" id="affichageTextSlide2">
-                                        AFFICHAGE
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
-                        <a href="#carousel" class="left carousel-control" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left"></span>
-                        </a>
-                        <a href="#carousel" class="right carousel-control" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right"></span>
-                        </a>
-                    </div>             
-                </div>
-                <div class="icon faa-float animated"><i class="fa fa-angle-double-down"></i></div>
-            </section>
-            <!-- page 2-->
-            <section id="page2">
-                <div class="content">
-                    <div class="container clearfix">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h2 class="heading">Panorama des études</h2>
-                                <p class="lead">
-                                <p>L’IFAG accueille des étudiants diplômés de toutes filières (gestion, commerce, technique, scientifique, professionnelle).
-
-                                    Chaque diplômé IFAG peut se prévaloir d’une double compétence en entrant sur le marché du travail. La compétence fonctionnelle acquise en Bac général, technologique ou professionnel, BTS, DUT, L2 ou Licence Pro est alors complétée par la pratique du management global de l’entreprise.
-
-                                    Ainsi, chaque diplômé IFAG disposera de toutes les compétences pour devenir dirigeant d’entreprise mais il pourra également saisir toutes les opportunités de création ou de reprise d’entreprise.</p>
-
-                            </div>
-                            <div class="col-md-5 col-md-offset-1"><br>
-                                <p><img src="{{ asset('couleur_photo/Ifag/about.jpg') }}" style="width: 500px"alt=""></p>
-
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <p>
-                                    <img class="schema" src="{{ asset('couleur_photo/Ifag/Panorama-MECP.png') }}" alt="">
-                                </p>
+                        <div class="item">
+                            <img src="{{ asset('couleur_photo/Ifag/Font/fond-rouge.jpg') }}" alt="Slide 2"/>
+                            <div class="affichageContenu">
+                                <div class="title" id="affichageTitleSlide2">TITRE</div>
+                                <div class="text italic" id="affichageTextSlide2">
+                                    AFFICHAGE
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="{{ asset('couleur_photo/Ifag/Font/fond-vert.jpg') }}" style="width: 1076px"/>
+                            <div class="affichageContenu">
+                                <div class="title" id="affichageTitleSlide2">TITRE</div>
+                                <div class="text italic" id="affichageTextSlide2">
+                                    AFFICHAGE
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <a href="#carousel" class="left carousel-control" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a href="#carousel" class="right carousel-control" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
                 </div>
-            </section>
-            <!-- page 3 - class section-gray adds gray background-->
-            <section id="page2">
-                <div class="content">
-                    <div class="container clearfix">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h2 class="heading">Integrez l'IFAG</h2>
-                                <p class="lead">
-                                <p>Une candidature pour 16 campus !
-                                    À l’IFAG, vous passez un seul concours pour intégrer le campus de votre choix.<br>
             </div>
-            <a href="#carousel" class="left carousel-control" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
-            <a href="#carousel" class="right carousel-control" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
-        </div>
-<script type="text/javascript" src="{{asset('https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js')}}"></script>
-<script type="text/javascript" src="{{asset('')}}"></script>
-<script type="text/javascript" src="{{asset('js/jquery.bcSwipe.min.js')}}"></script>
+            <div class="icon faa-float animated"><i class="fa fa-angle-double-down"></i></div>
+        </section>
+        <!-- page 2-->
+        <section id="page2">
+            <div class="content">
+                <div class="container clearfix">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2 class="heading">Panorama des études</h2>
+                            <p class="lead">
+                            <p>L’IFAG accueille des étudiants diplômés de toutes filières (gestion, commerce, technique, scientifique, professionnelle).
 
-<<<<<<< HEAD
+                                Chaque diplômé IFAG peut se prévaloir d’une double compétence en entrant sur le marché du travail. La compétence fonctionnelle acquise en Bac général, technologique ou professionnel, BTS, DUT, L2 ou Licence Pro est alors complétée par la pratique du management global de l’entreprise.
 
+                                Ainsi, chaque diplômé IFAG disposera de toutes les compétences pour devenir dirigeant d’entreprise mais il pourra également saisir toutes les opportunités de création ou de reprise d’entreprise.</p>
 
-
-                                    Venez comme vous êtes !
-                                    Halte aux stéréotypes !<br>
-                                    La force des étudiants IFAG réside dans leur diversité. Ce qui nous importe, c’est votre personnalité, votre motivation, vos passions, vos talents et votre avenir.</p>
-
-                            </div>
-                            <div class="col-md-5 col-md-offset-1"><br>
-                                <p><img src="{{ asset('couleur_photo/Ifag/Concours-IFAG-selection.png') }}" style="width: 500px"alt=""></p>
-                            </div>
                         </div>
-                        <div class="row">
+                        <div class="col-md-5 col-md-offset-1"><br>
+                            <p><img src="{{ asset('couleur_photo/Ifag/about.jpg') }}" style="width: 500px"alt=""></p>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
                             <p>
-                                <img class="schema" src="{{ asset('couleur_photo/Ifag/Admissions-épreuves-17-18.png') }}" alt="">
+                                <img class="schema" src="{{ asset('couleur_photo/Ifag/Panorama-MECP.png') }}" alt="">
                             </p>
                         </div>
                     </div>
                 </div>
-            </section>
-            <section id="page2">
-                <div class="content">
-                    <div class="container clearfix">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h2 class="heading">Espace Entreprise</h2>
-                                <p class="lead">
-                                <p>L’IFAG propose aux entreprises un ensemble de solutions pour intégrer aujourd’hui les compétences qui favoriseront son développement.
+            </div>
+        </section>
+        <!-- page 3 - class section-gray adds gray background-->
+        <section id="page2">
+            <div class="content">
+                <div class="container clearfix">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2 class="heading">Integrez l'IFAG</h2>
+                            <p class="lead">
+                            <p>Une candidature pour 16 campus !
+                                À l’IFAG, vous passez un seul concours pour intégrer le campus de votre choix.<br>
 
-                                    L’IFAG offre aux entreprises des opportunités pour recruter un stagiaire, un alternant ou un jeune diplômé.
 
-                                    Les étudiants sont formés dans les domaines suivants :
 
-                                    en commercial,
-                                    en marketing,
-                                    en management de projet,
-                                    en audit/finance
-                                    et en ressources humaines.
-                                    Les entreprises peuvent intervenir de plusieurs manières en confiant des projets aux étudiants (ex : diagnostic stratégique de votre entreprise, création de plaquette, étude de marché, organisation d’événement, etc…).
 
-                                    Vous pourrez réaliser vos recrutements tout au long de l’année en déposant vos offres sur notre site web et  venir au sein de nos campus lors des événements organisés par les écoles.
 
-                                    Les services relations entreprises de l’IFAG se tiennent à votre disposition pour vous guider dans la définition de vos besoins, vous aider à choisir le profil recherché et vous accompagner dans vos démarches administratives.</p>
+                                Venez comme vous êtes !
+                                Halte aux stéréotypes !<br>
+                                La force des étudiants IFAG réside dans leur diversité. Ce qui nous importe, c’est votre personnalité, votre motivation, vos passions, vos talents et votre avenir.</p>
 
-                            </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-12"><br>
-                                <p class="image-schema" ><img src="{{ asset('couleur_photo/Ifag/Schema-entreprises1.png') }}"></p>
-                            </div>
+                        <div class="col-md-5 col-md-offset-1"><br>
+                            <p><img src="{{ asset('couleur_photo/Ifag/Concours-IFAG-selection.png') }}" style="width: 500px"alt=""></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p>
+                            <img class="schema" src="{{ asset('couleur_photo/Ifag/Admissions-épreuves-17-18.png') }}" alt="">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="page2">
+            <div class="content">
+                <div class="container clearfix">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="heading">Espace Entreprise</h2>
+                            <p class="lead">
+                            <p>L’IFAG propose aux entreprises un ensemble de solutions pour intégrer aujourd’hui les compétences qui favoriseront son développement.
+
+                                L’IFAG offre aux entreprises des opportunités pour recruter un stagiaire, un alternant ou un jeune diplômé.
+
+                                Les étudiants sont formés dans les domaines suivants :
+
+                                en commercial,
+                                en marketing,
+                                en management de projet,
+                                en audit/finance
+                                et en ressources humaines.
+                                Les entreprises peuvent intervenir de plusieurs manières en confiant des projets aux étudiants (ex : diagnostic stratégique de votre entreprise, création de plaquette, étude de marché, organisation d’événement, etc…).
+
+                                Vous pourrez réaliser vos recrutements tout au long de l’année en déposant vos offres sur notre site web et  venir au sein de nos campus lors des événements organisés par les écoles.
+
+                                Les services relations entreprises de l’IFAG se tiennent à votre disposition pour vous guider dans la définition de vos besoins, vous aider à choisir le profil recherché et vous accompagner dans vos démarches administratives.</p>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12"><br>
+                            <p class="image-schema" ><img src="{{ asset('couleur_photo/Ifag/Schema-entreprises1.png') }}"></p>
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- page 5-->
-            <section id="page5" class="section-gray">
-                <div class="content">
-                    <div class="container clearfix">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h2 class="heading">Campus & vie etudiante</h2>
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <p>Lille – la capitale des Flandres est une ville où de nombreux jeunes s’instruisent…
+            </div>
+        </section>
+        <!-- page 5-->
+        <section id="page5" class="section-gray">
+            <div class="content">
+                <div class="container clearfix">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="heading">Campus & vie etudiante</h2>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <p>Lille – la capitale des Flandres est une ville où de nombreux jeunes s’instruisent…
 
-                                            Plus de 100 000 jeunes étudient à Lille, ce qui en fait le troisième centre universitaire français.
+                                        Plus de 100 000 jeunes étudient à Lille, ce qui en fait le troisième centre universitaire français.
 
-                                            C’est une ville dynamique, agréable et culturelle.
+                                        C’est une ville dynamique, agréable et culturelle.
 
-                                            Dotée d’une situation géographique idéale au cœur du triangle des réseaux TGV, autoroutier et du tunnel sous la Manche elle se veut cosmopolite et électrique. Elle est aussi le centre d’un des plus grands pôles économiques de France.
+                                        Dotée d’une situation géographique idéale au cœur du triangle des réseaux TGV, autoroutier et du tunnel sous la Manche elle se veut cosmopolite et électrique. Elle est aussi le centre d’un des plus grands pôles économiques de France.
 
-                                            La communauté urbaine regroupe plus d’un million d’habitants ce qui en fait la 4ème ville de France en terme de population.</p>
-                                        Depuis 2012, l’école à l’origine de l’entrepreneuriat IFAG, créée en 1968, s’est implantée au cœur de Lille sur 1300m2 proche de la station de Métro Rihour.
+                                        La communauté urbaine regroupe plus d’un million d’habitants ce qui en fait la 4ème ville de France en terme de population.</p>
+                                    Depuis 2012, l’école à l’origine de l’entrepreneuriat IFAG, créée en 1968, s’est implantée au cœur de Lille sur 1300m2 proche de la station de Métro Rihour.
 
-                                        A deux pas, vous y trouverez la Grand’Place, cœur touristique de la ville, très animée, entre le Vieux-Lille et le secteur piétonnier. A quelques centaines de mètres de la Gare Lille-Flandres, elle est souvent le premier lieu remarquable traversé par les visiteurs.
+                                    A deux pas, vous y trouverez la Grand’Place, cœur touristique de la ville, très animée, entre le Vieux-Lille et le secteur piétonnier. A quelques centaines de mètres de la Gare Lille-Flandres, elle est souvent le premier lieu remarquable traversé par les visiteurs.
 
-                                        En plein centre-ville de Lille et au cœur de la vie étudiante, l’équipe de l’IFAG est fière de vous accueillir dans l’école N°1 de l’entrepreneuriat.
-                                        <p><strong>Le Bureau Des Etudiants</strong><br>
+                                    En plein centre-ville de Lille et au cœur de la vie étudiante, l’équipe de l’IFAG est fière de vous accueillir dans l’école N°1 de l’entrepreneuriat.
+                                    <p><strong>Le Bureau Des Etudiants</strong><br>
 
-                                            Le BDE de l’IFAG Lille anime tout au long de l’année la vie extra scolaire. Vous serez invité à de nombreux événements : Weekend d’intégration, tournoi de PSP, gala, soirées à thème, et encore plein d’autres… </p>
-                                    </div>
+                                        Le BDE de l’IFAG Lille anime tout au long de l’année la vie extra scolaire. Vous serez invité à de nombreux événements : Weekend d’intégration, tournoi de PSP, gala, soirées à thème, et encore plein d’autres… </p>
+                                </div>
 
-                                    <div class="col-sm-6">
-                                        <p><strong>Le Bureau Des Sports</strong><br>
+                                <div class="col-sm-6">
+                                    <p><strong>Le Bureau Des Sports</strong><br>
 
-                                            Le Bureau Des Sports IFAG Lille est une association à but non lucratif de type Loi 1901 qui regroupe les étudiants du campus de Lille pour organiser les activités sportives en groupe. Cela s’organise autour de footing, natation, foot en salle et autres activités !
+                                        Le Bureau Des Sports IFAG Lille est une association à but non lucratif de type Loi 1901 qui regroupe les étudiants du campus de Lille pour organiser les activités sportives en groupe. Cela s’organise autour de footing, natation, foot en salle et autres activités !
 
-                                            Vie Etudiante - BDS<br>Nous venions tout juste d’arriver sur le campus de l’IFAG que nous constations un manque de communication entre les différentes écoles et les différentes classes.
+                                        Vie Etudiante - BDS<br>Nous venions tout juste d’arriver sur le campus de l’IFAG que nous constations un manque de communication entre les différentes écoles et les différentes classes.
 
-                                            Tous les 3, en 3ème année de Bachelor Responsable Projet et Développement d’Activité à l’IFAG de Lille et passionnés de sport nous avons décidé de réunir les classes, les écoles et le staff sous la même cause : le sport.
+                                        Tous les 3, en 3ème année de Bachelor Responsable Projet et Développement d’Activité à l’IFAG de Lille et passionnés de sport nous avons décidé de réunir les classes, les écoles et le staff sous la même cause : le sport.
 
-                                            Motivés et sportifs, le BDS permet de réunir tout le monde pour des activités qui s’effectuent habituellement seul. Grâce au BDS nous développons la cohésion, la communication, l’échange au sein du campus ainsi que l’esprit d’équipe et l’entraide.
+                                        Motivés et sportifs, le BDS permet de réunir tout le monde pour des activités qui s’effectuent habituellement seul. Grâce au BDS nous développons la cohésion, la communication, l’échange au sein du campus ainsi que l’esprit d’équipe et l’entraide.
 
-                                            L’apport aux étudiants est majeur et diversifié. Dans un premier temps, cela permet aux étudiants de communiquer entre eux à l’extérieur du campus dans un univers libre.
+                                        L’apport aux étudiants est majeur et diversifié. Dans un premier temps, cela permet aux étudiants de communiquer entre eux à l’extérieur du campus dans un univers libre.
 
-                                            Dans un second temps ces mêmes étudiants peuvent se lier d’amitié et étendre leur réseau et ainsi participer à la bonne entente de tout notre campus.
+                                        Dans un second temps ces mêmes étudiants peuvent se lier d’amitié et étendre leur réseau et ainsi participer à la bonne entente de tout notre campus.
 
-                                            Enfin la création du BDS apporte une notion de sécurité, même si les risques sont mineurs et aléatoires ils sont malheureusement présents. La formation de groupe pour les footings par exemple apporte un sentiment de sécurité et de confiance aux étudiants.</p>
-                                    </div>
+                                        Enfin la création du BDS apporte une notion de sécurité, même si les risques sont mineurs et aléatoires ils sont malheureusement présents. La formation de groupe pour les footings par exemple apporte un sentiment de sécurité et de confiance aux étudiants.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <section id="page2">
-                <div class="content">
-                    <div class="container clearfix">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h2 class="heading">IFAGTORY</h2>
-                                <p class="lead">
-                                <p><strong>NOS INCUBATEURS</strong><br>
-                                    Avec 1 incubateur dans chacun de ses 16 campus, l’IFAG est l’école qui dispose du plus grand réseau d’incubateurs de  France.
-                                    Au-delà de l’hébergement et des services proposés, ces structures offrent à chaque créateur/repreneur un écosystème d’échanges et de  synergies favorables à l’accélération de leurs projets.<br>
-                                    <strong>NOTRE PHILOSOPHIE</strong><br>
-                                    Accompagner tout profil souhaitant entreprendre<br>
-                                    Héberger tous les types de projets dans des lieux stimulants<br>
-                                    Proposer des formations utiles et personnalisées<br>
-                                    Stimuler la cohésion<br>
-                                    Accélérer la croissance des entreprises créées<br>
-                                    Maximiser le taux de survie des entreprises accompagnées.<br>
+            </div>
+        </section>
+        <section id="page2">
+            <div class="content">
+                <div class="container clearfix">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2 class="heading">IFAGTORY</h2>
+                            <p class="lead">
+                            <p><strong>NOS INCUBATEURS</strong><br>
+                                Avec 1 incubateur dans chacun de ses 16 campus, l’IFAG est l’école qui dispose du plus grand réseau d’incubateurs de  France.
+                                Au-delà de l’hébergement et des services proposés, ces structures offrent à chaque créateur/repreneur un écosystème d’échanges et de  synergies favorables à l’accélération de leurs projets.<br>
+                                <strong>NOTRE PHILOSOPHIE</strong><br>
+                                Accompagner tout profil souhaitant entreprendre<br>
+                                Héberger tous les types de projets dans des lieux stimulants<br>
+                                Proposer des formations utiles et personnalisées<br>
+                                Stimuler la cohésion<br>
+                                Accélérer la croissance des entreprises créées<br>
+                                Maximiser le taux de survie des entreprises accompagnées.<br>
 
-                                    <strong>UNE FORMATION INNOVANTE</strong><br>
-                                    Accès à une multitude d’évènements et de mises en situation (Conférences, Open Innovation Bootcamp, Mash-up session, crash-test session, pitch-party, etc…)<br>
-                                    <strong>UN ACCOMPAGNEMENT DYNAMIQUE</strong><br>
-                                    Suivi par un mentor et conseils avisés selon les besoins (finance, marketing, commercial, RH, juridique, etc…)<br>
-                                    <strong>UN ESPACE DÉDIÉ</strong><br>
-                                    Un mobilier design et adapté au travail collaboratif et créatif.<br>
-                                    <strong>NOS OBJECTIFS</strong><br>
-                                    Préparer et former de futurs entrepreneurs, repreneurs & des intrapreneurs<br>
-                                    Créer et sauvegarder les emplois de demain<br>
-                                    Maximiser le taux de survie à 3 ans des entreprises hébergées<br>
-                                </p>
+                                <strong>UNE FORMATION INNOVANTE</strong><br>
+                                Accès à une multitude d’évènements et de mises en situation (Conférences, Open Innovation Bootcamp, Mash-up session, crash-test session, pitch-party, etc…)<br>
+                                <strong>UN ACCOMPAGNEMENT DYNAMIQUE</strong><br>
+                                Suivi par un mentor et conseils avisés selon les besoins (finance, marketing, commercial, RH, juridique, etc…)<br>
+                                <strong>UN ESPACE DÉDIÉ</strong><br>
+                                Un mobilier design et adapté au travail collaboratif et créatif.<br>
+                                <strong>NOS OBJECTIFS</strong><br>
+                                Préparer et former de futurs entrepreneurs, repreneurs & des intrapreneurs<br>
+                                Créer et sauvegarder les emplois de demain<br>
+                                Maximiser le taux de survie à 3 ans des entreprises hébergées<br>
+                            </p>
 
-                            </div>
-                            <div class="col-md-5 col-md-offset-1"><br>
-                                <p><img src="{{ asset('couleur_photo/Ifag/IFAGTORY-getup.png') }}" style="width: 500px"alt=""</p>
+                        </div>
+                        <div class="col-md-5 col-md-offset-1"><br>
+                            <p><img src="{{ asset('couleur_photo/Ifag/IFAGTORY-getup.png') }}" style="width: 500px"alt=""</p>
 
-                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- page 6-->
-            <section id="page6">
-                <div class="content">
-                    <div class="container clearfix">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h2 class="heading">Equipe pédagogique & Contact</h2>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <form id="contact-form" method="post" action="contact.php" class="contact-form">
-                                            <div class="controls">
-                                                <div class="row">
-                                                    <div class="col-sm-6">
-                                                        <div class="form-group">
-                                                            <label for="name">Prénom *</label>
-                                                            <input type="text" name="name" placeholder="Entrez votre prénom" required="required" class="form-control">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-sm-6">
-                                                        <div class="form-group">
-                                                            <label for="surname">Nom *</label>
-                                                            <input type="text" name="surname" placeholder="Entrez votre nom" required="required" class="form-control">
-                                                        </div>
+            </div>
+        </section>
+        <!-- page 6-->
+        <section id="page6">
+            <div class="content">
+                <div class="container clearfix">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="heading">Equipe pédagogique & Contact</h2>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <form id="contact-form" method="post" action="contact.php" class="contact-form">
+                                        <div class="controls">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label for="name">Prénom *</label>
+                                                        <input type="text" name="name" placeholder="Entrez votre prénom" required="required" class="form-control">
                                                     </div>
                                                 </div>
-                                                <div class="form-group">
-                                                    <label for="surname">Email *</label>
-                                                    <input type="email" name="email" placeholder="Entrez votre email" required="required" class="form-control">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="surname">Message *</label>
-                                                    <textarea rows="4" name="message" placeholder="Entrez votre message" required="required" class="form-control"></textarea>
-                                                </div>
-                                                <div class="text-center">
-                                                    <input type="submit" name="name" value="Envoyez le message" class="btn btn-primary btn-block">
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label for="surname">Nom *</label>
+                                                        <input type="text" name="surname" placeholder="Entrez votre nom" required="required" class="form-control">
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </form>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <p>Damien DUCOURANT : Directeur</p>
-                                        <p>Cassandra BERTHELOT : Chargée des admissions<br></p>
-                                        <p>Marie AUCH : Chargée des admissions<br></p>
-                                        <p>Flore LEFEVRE : Chargée des relations entreprises<br></p>
-                                        <p>Florent DESWARTVAGER : Coordinateur pédagogique<br></p>
-                                        <p>Sylvie GRANDJEAN : Assistant comptable et administrative<br></p>
-                                    </div>
+                                            <div class="form-group">
+                                                <label for="surname">Email *</label>
+                                                <input type="email" name="email" placeholder="Entrez votre email" required="required" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="surname">Message *</label>
+                                                <textarea rows="4" name="message" placeholder="Entrez votre message" required="required" class="form-control"></textarea>
+                                            </div>
+                                            <div class="text-center">
+                                                <input type="submit" name="name" value="Envoyez le message" class="btn btn-primary btn-block">
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
-                                <div class="row copyright">
-                                    <div class="col-md-6">
+                                <div class="col-md-6">
+                                    <p>Damien DUCOURANT : Directeur</p>
+                                    <p>Cassandra BERTHELOT : Chargée des admissions<br></p>
+                                    <p>Marie AUCH : Chargée des admissions<br></p>
+                                    <p>Flore LEFEVRE : Chargée des relations entreprises<br></p>
+                                    <p>Florent DESWARTVAGER : Coordinateur pédagogique<br></p>
+                                    <p>Sylvie GRANDJEAN : Assistant comptable et administrative<br></p>
+                                </div>
+                            </div>
+                            <div class="row copyright">
+                                <div class="col-md-6">
 
-                                    </div>
-                                    <div class="col-md-6">
-                                        <p class="credit">Template by <a href="https://bootstraptemple.com">Bootstrap Temple</a></p>
-                                        <!-- Please do not remove the backlink to us unless you have purchased the attribution-free license at https://bootstraptemple.com. It is part of the license conditions. Thanks for understanding :) -->
-                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="credit">Template by <a href="https://bootstraptemple.com">Bootstrap Temple</a></p>
+                                    <!-- Please do not remove the backlink to us unless you have purchased the attribution-free license at https://bootstraptemple.com. It is part of the license conditions. Thanks for understanding :) -->
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
     </div>
-    <script type="text/javascript" src="{{asset('js/ifag.js')}}"/></script>
+</div>
+<script type="text/javascript" src="{{asset('js/ifag.js')}}"></script>
 {% endblock %}
