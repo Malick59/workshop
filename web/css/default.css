@@ -50,11 +50,15 @@ div.footer {
 }
 
 #Calque_1{
-	transform: rotate(180deg);
 	position: absolute;
 	right: -70px;
 	top: 100px;
+	text-align: right;
+}
+
+.wave-svg {
 	fill: #ffffff;
+	transition : 0.8s;
 }
 
 html {
@@ -64,7 +68,7 @@ html {
 
 /* Zoom logo portail */
 
-.zoom {
+xzoom {
     width: auto;
     height: auto;
 	opacity: 0.8;
