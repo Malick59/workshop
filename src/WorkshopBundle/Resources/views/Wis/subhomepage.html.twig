@@ -1,1 +1,289 @@
-test wis
+{% extends '::base.html.twig' %}
+
+{% block stylesheets %}
+    <!-- we use cdn but you can also include local files located in css directory-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ asset('css/font-awesome-animation.min.css') }}">
+    <!-- onepage scroll stylesheet-->
+    <link rel="stylesheet" href="{{ asset('css/onepage-scroll.css') }}">
+    <!-- theme stylesheet-->
+    <link href="{{asset('css/wiz.css')}}" rel="stylesheet" type="text/css" />
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
+{% endblock %}
+{% block body %}
+    <div class="wrapper">
+        <div class="main"> 
+            <!-- page 1-->
+            <section id="page1">
+                <div class="overlay">
+                </div>
+                <div class="content car">
+                     <div id="carousel" class="carousel slide" data-ride="carousel">
+                        <!-- Items -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="{{ asset('couleur_photo/Wis/Font/fond-edito-grand-1662x936.jpg') }}" alt="Slide 1" />
+                                <div class="affichageContenu">
+                                    <div class="title">Bienvenue sur le site de WIS</div>
+                                    <div class="text italic">
+                                        L'école <strong>web</strong> et <strong>digital business</strong><br>
+                                        Naviguez et découvrez pourquoi cette école <strong>est faîte pour vous !</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="{{ asset('couleur_photo/Wis/macbook-juice.jpg') }}" alt="Slide 2"/>
+                                <div class="affichageContenu">
+                                    <div class="title" id="affichageTitleSlide2">TITRE</div>
+                                    <div class="text italic" id="affichageTextSlide2">
+                                        AFFICHAGE
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="{{ asset('couleur_photo/Wis/Font/chiffres-cles-1662x936.jpg') }}" style="width: 1076px"/>
+                                <div class="affichageContenu">
+                                    <div class="title" id="affichageTitleSlide2">TITRE</div>
+                                    <div class="text italic" id="affichageTextSlide2">
+                                        AFFICHAGE
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <a href="#carousel" class="left carousel-control" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a href="#carousel" class="right carousel-control" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>             
+                </div>
+                <div class="icon faa-float animated"><i class="fa fa-angle-double-down"></i></div>
+            </section>
+            <!-- page 2-->
+            <section id="page2">
+                <div class="content">
+                    <div class="container clearfix">
+                        <div class="row">
+                            <div class="col-md-6"> 
+                                <h2 class="heading">Panorama des études</h2>
+                                <p class="lead">
+                                <p>A l’heure où la polyvalence est un enjeu de performance et d’employabilité, WIS propose des programmes Bac+3 et Bac+5 conçus sur la base de la double-compétence menant à l’acquisition systématique d’un double-diplôme.<br><br>
+
+                                    WIS forme des managers opérationnels aux métiers du digital capables d’intervenir au sein d’une entreprise dans les services supports de la digitalisation : direction des systèmes d’informations, direction commerciale, direction marketing et communication.<br><br>
+
+                                    L’objectif : déployer le digital dans la stratégie globale des entreprises pour assurer leur rentabilité.<br><br>
+
+                                    Nos diplômés disposent de plusieurs qualités :<br><br>
+
+                                    <strong> > </strong>Être un expert du codage, du marketing digital, du e-commerce et communication<br>
+                                    <strong> > </strong>Être un stratège, capable d’analyser les enjeux et les marchés de l’entreprise<br>
+                                    <strong> > </strong>Savoir animer dans la durée des projets d’envergure<br>
+                                </p>
+
+                            </div>
+                            <div class="col-md-5 col-md-offset-1"><br>
+                                <p><img src="{{ asset('couleur_photo/Wis/about.jpg') }}" style="width: 500px"alt=""</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- page 3 - class section-gray adds gray background-->
+            <section id="page2">
+                <div class="content">
+                    <div class="container clearfix">
+                        <div class="row">
+
+                            <h2 class="heading">Integrez WIS</h2>
+                            <p class="lead">
+                            <p>
+
+                                Le programme modulaire, basé sur l’acquisition des compétences, permet toutes les admissions : post-Bac, Bac+1, Bac+2, Bac+3, Bac+4.<br><br>
+
+                                L’admission se fait sur dépôt de dossier de candidature, examen écrit et entretien individuel.<br><br>
+
+                                Une réponse personnalisée est donnée à chaque candidat dans les jours qui suivent l’entretien.<br><br>
+
+                                Notre outil d’évaluation des compétences vous permet d’intégrer WIS tout au long de l’année.<br>
+                                Salariés, demandeurs d’emplois, vous pouvez également intégrer WIS et bénéficier de la VAE (Validation des Acquis de l’Expérience).
+
+                            </p>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="page2">
+                <div class="content">
+                    <div class="container clearfix">
+                        <div class="row">                 
+                            <h2 class="heading">Espace Entreprise</h2>
+                            <p class="lead">
+                            <p>L’implication des entreprises constitue l’un des atouts de la formation aux métiers du Web. Elle est très forte dans la pédagogie WIS et se situe à plusieurs niveaux :<br><br>
+
+                                <strong>> </strong>Dans l’enseignement : les formateurs, en poste en entreprise, viennent au quotidien transmettre aux étudiants les savoir-faire actuels de l’industrie du Web<br>
+                                <strong>> </strong>Par l’accueil des étudiants en stage et en alternance<br>
+                                <strong>> </strong>Par l’animation de speed meetings, de conférences, de master classes, de coaching<br>
+                                <strong>> </strong>Par l’accompagnement de projets de création d’entreprise au sein de l’incubateur<br>
+                                <strong>> </strong>Par l’insertion réussie de nos élèves dans la vie professionnelle<br>
+                                <strong>> </strong>Par le parrainage des promotions par des entreprises connues dans le domaine<br><br>
+
+                                L’implication des professionnels permet aux étudiants d’être en prise directe avec la réalité des entreprises qui participent au pilotage des orientations pédagogiques de WIS.<br>
+                                La participation des intervenants extérieurs issus des entreprises est l’une des richesses de l’enseignement WIS.<br>
+                                Elle permet aux étudiants d’être en contact constant avec le monde industriel. Leur expérience et leur savoir-faire, mis en pratique au quotidien dans leur métier, assurent un enseignement parfaitement en phase avec la réalité.<br><br>
+                                WIS accompagne les entreprises dans tous leurs besoins en recrutement et en formation<br><br>
+
+                                <strong>> </strong>Stages étudiants<br>
+                                <strong>> </strong>Contrat de professionnalisation ou d’apprentissage<br>
+                                <strong>> </strong>Classe dédiée<br>
+                                <strong>> </strong>Dispositifs de reconversion<br>
+                                <strong>> </strong>Parcours spécialisé<br>
+                                <strong>> </strong>Université d’entreprise<br>
+                                <strong>> </strong>VAE collective ou individuelle<br>
+                                <strong>> </strong>Formations Eligibles au CPF et au CIF<br>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- page 5-->
+            <section id="page5" class="section-gray">
+                <div class="content">
+                    <div class="container clearfix">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2 class="heading">Campus & vie etudiante</h2>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <p>Situé au cœur de l’Eurorégion, le campus de Lille profite d’une situation géographique privilégiée et stratégique. Le campus est idéalement situé en plein centre-ville (à deux pas de la Grand Place) et à 10 minutes à pied de la gare Lille Flandres. 
+
+
+
+                                            L’équipe pédagogique, composée de professionnels et d’enseignants, saura vous accompagner tout au long de votre formation et vous préparera à une immersion en entreprise. Vous aurez le choix entre une formation initiale ou en alternance et vous aurez aussi l’opportunité de partir à l’étranger.
+                                        <p><strong>Le Campus</strong><br>
+
+                                            <strong> > </strong>Campus récent<br>
+                                            <strong> > </strong>Salles tout équipées<br>
+                                            <strong> > </strong>Accès à un incubateur d’entreprises<br>
+                                            <strong> > </strong>Situation géographique adéquate<br>
+                                            <strong> > </strong>Des espaces de co working<br>
+                                            <strong> > </strong>Wifi et fibre optique</p>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <p><img src="{{ asset('couleur_photo/Wis/campus-lille.jpg') }}"</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="page2">
+                <div class="content">
+                    <div class="container clearfix">
+                        <div class="row">
+                            <div class="col-md-6"> 
+                                <h2 class="heading">My DIL</h2>
+                                <p class="lead">                  <p>
+                                <p>Un lieu où le savoir à la demande est à la portée de tous nos élèves et où le matériel modulable et high-tech est mis au service de l’expérimentation pédagogique.
+
+                                    Échanger, développer, accélérer, co-construire, favoriser l’émergence de projets innovants par un lieu de collaboration et de confrontation unique entre étudiants :<br><br>
+
+                                    Espace, laboratoire dédié au codage, à l’innovation technologique.<br>
+
+                                    Dans MyDIL, vous avez un accès illimité aux dernière technologies : <br><br>
+                                <ul>NAO, le robot humanoïde sur lequel vous inventez le compagnon de demain.<br>
+                                    L’oculus rift et sa nouvelle forme d’immersion en 3D.<br>
+                                    Les nouvelles technologies de réalité augmentée (hololens…).<br>
+                                    L’impression 3D pour le prototypage.<br>
+                                    Les objets connectés d’aujourd’hui, et surtout ceux de demain, bracelets, montres, balance tissu…<br>
+                                    Les nouvelles interfaces homme/machine, comme le leap motion.<br>
+                                    Les différentes formes de tablettes et Smartphones nécessaires au développement des applications du futur.<br>
+                                    Les technologies de système embarqué (raspberry py, arduino…).<br>
+                                    Les drônes et leurs nouvelles applications.<br>
+                                    Des outils collaboratifs innovants comme la surface hub.<br> 
+                                    Et bien d’autres<br>
+
+                                    </p>
+
+                                    </div>
+                                    <div class="col-md-5 col-md-offset-1"><br>
+                                        <p><img src="{{ asset('couleur_photo/Wis/mydil-e1490867265411-293x300.png') }}" style="width: 500px"alt=""></p>
+
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <!-- page 6-->
+            <section id="page6">
+                <div class="content">
+                    <div class="container clearfix">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2 class="heading">Equipe pédagogique & Contact</h2>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <form id="contact-form" method="post" action="contact.php" class="contact-form">
+                                            <div class="controls">
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <label for="name">Prénom *</label>
+                                                            <input type="text" name="name" placeholder="Entrez votre prénom" required="required" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <label for="surname">Nom *</label>
+                                                            <input type="text" name="surname" placeholder="Entrez votre nom" required="required" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="surname">Email *</label>
+                                                    <input type="email" name="email" placeholder="Entrez votre email" required="required" class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="surname">Message *</label>
+                                                    <textarea rows="4" name="message" placeholder="Entrez votre message" required="required" class="form-control"></textarea>
+                                                </div>
+                                                <div class="text-center">
+                                                    <input type="submit" name="name" value="Envoyez le message" class="btn btn-primary btn-block">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>Frédéric DAUMONT : Directeur de campus</p>
+                                        <p>Jean-Michel VIGNON :Responsable administratif et financier</p>
+                                        <p>Céline FASQUELLE : Chargée de développement - Services des admissions<br></p>
+                                        <p>Karima ELASRY : Chargée de développement - Services des admissions<br></p>
+                                        <p>Malika MOUHEB : Chargée des relations entreprises<br></p>
+                                        <p>Poly VASSILIOU : Résponsable pédagogique<br></p>
+                                    </div>
+                                </div>
+                                <div class="row copyright">
+                                    <div class="col-md-6">
+
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="credit">Template by <a href="https://bootstraptemple.com">Bootstrap Temple</a></p>
+                                        <!-- Please do not remove the backlink to us unless you have purchased the attribution-free license at https://bootstraptemple.com. It is part of the license conditions. Thanks for understanding :) -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script type="text/javascript" src="{{asset('js/wiz.js')}}"/></script>
+{% endblock %}

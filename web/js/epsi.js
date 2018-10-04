@@ -1,8 +1,8 @@
 /* CAROUSEL IMAGE */
 
 $('.carousel').carousel({
-    interval: 10000,
-    pause: "false",
+    interval: 20000,
+    pause: false,
     keyboard: true
 });
 $(document).keydown(function (e) {

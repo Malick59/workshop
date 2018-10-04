@@ -44,3 +44,13 @@ $(function(){
       $(".textFooter").text(origine);
   });
 })
+
+/* Ne pas glisser les images */
+$(function () {
+    $("img").on("dragstart", function (event) {
+        event.preventDefault();
+    });
+    $("a").on("dragstart", function (event) {
+        event.preventDefault();
+    });
+});
