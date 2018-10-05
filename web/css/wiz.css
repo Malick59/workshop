@@ -1086,17 +1086,19 @@ CAR0USEL
 	.text{
 		font-size: 0.8em;
 	}
+}
 .Menu_bar_right{
 	position:fixed; 
 	width: 100%;
 	display: flex;
 	flex-flow:column;
 	align-items:flex-end;
-	top: 15%;
+	top: 5%;
 	background: transparent;
 	overflow-x: hidden;
 	padding: 8px 0;
 	opacity: 1;
+  z-index: 5;
 }
 
 .Menu_bar_right a{
